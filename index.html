@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Shruti ✨ | With Love From Krish</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-redvelvet">
+  <!-- Interactive Particle & Cracker Canvas -->
+  <canvas id="fx-canvas"></canvas>
+
+  <!-- Ambient Floating Black & Golden Balloons -->
+  <div class="floating-balloons-container" id="balloons-container" aria-hidden="true"></div>
+
+  <!-- Floating Audio & Quick Controls -->
+  <header class="app-header">
+    <div class="brand-badge">
+      <span class="sparkle-icon">✨</span>
+      <span class="brand-title">Celebrating Shruti's Birthday</span>
+    </div>
+    <div class="header-actions">
+      <button id="bgm-toggle-btn" class="gold-pill-btn audio-btn" title="Toggle Birthday Music">
+        <span class="audio-wave">
+          <span></span><span></span><span></span><span></span>
+        </span>
+        <span id="bgm-label">Play Music 🎵</span>
+      </button>
+      <a href="#cake-section" class="gold-pill-btn ghost">Cut Cake 🎂</a>
+      <a href="#letter-section" class="gold-pill-btn ghost">Letter 💌</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION: Monochrome Black + Glass Reflection + Right Side Cute Photo Frame -->
+  <section class="hero-section" id="hero">
+    <div class="hero-backdrop-glow"></div>
+    <div class="hero-container">
+      
+      <!-- Left Column: Romantic Greetings & Quick Surprises -->
+      <div class="hero-content">
+        <div class="royal-tag">
+          <span class="crown-emoji">👑</span> Special Birthday Celebration
+        </div>
+        <h1 class="hero-title">
+          Happy Birthday, <span class="gold-gradient-text glow-text">Shruti</span>
+        </h1>
+        <p class="hero-cursive">"The sweetest smile in this universe, the warmest heart in my life."</p>
+        
+        <p class="hero-desc">
+          Today is all about you — your beauty, your joyful laughter, your adorable silliness, and the endless happiness you bring. Step into your little red velvet wonderland filled with sweet surprises!
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#cake-section" class="btn-royal-primary">
+            <span>🎂 Cut Birthday Cake</span>
+          </a>
+          <a href="#gift-section" class="btn-royal-secondary">
+            <span>🎁 Open My Gifts</span>
+          </a>
+          <a href="#memories-section" class="btn-royal-outline">
+            <span>📸 Memory Lane</span>
+          </a>
+        </div>
+
+        <div class="sweet-quote-box glass-panel">
+          <div class="quote-sparkle">❝</div>
+          <p class="quote-text">You don't just light up rooms, you light up my whole world. Happy Birthday my dearest!</p>
+          <span class="quote-author">— Forever Yours, <strong>Krish</strong></span>
+        </div>
+      </div>
+
+      <!-- Right Column: Cute Frame with Golden Glowing Borders & Glass Floor Reflection -->
+      <div class="hero-media-wrapper">
+        <div class="frame-pedestal">
+          <div class="ornate-gold-frame" id="hero-frame">
+            <div class="frame-corner corner-tl"></div>
+            <div class="frame-corner corner-tr"></div>
+            <div class="frame-corner corner-bl"></div>
+            <div class="frame-corner corner-br"></div>
+            
+            <div class="frame-glow-ring"></div>
+            <div class="frame-ribbon">💖 Loveliest Girl</div>
+            
+            <div class="photo-container">
+              <img src="assets/photo1_couple.jpg" alt="Shruti and Krish together" class="hero-photo" id="hero-photo-img" />
+              <div class="photo-shimmer"></div>
+              <div class="floating-badge">Cutest Duo ✨</div>
+            </div>
+
+            <!-- Plaque Mention: From Krish in the frame -->
+            <div class="frame-gold-plaque">
+              <div class="plaque-inner">
+                <span class="plaque-title">Shruti & Krish</span>
+                <span class="plaque-sub">❝ Forever & Always ❞</span>
+                <span class="plaque-credit">From Krish ❤️</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Glass Floor Reflection Effect -->
+          <div class="glass-reflection-floor" aria-hidden="true">
+            <div class="mirror-image-container">
+              <img src="assets/photo1_couple.jpg" alt="" class="reflection-photo" />
+              <div class="reflection-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="scroll-down-hint">
+      <span>Scroll for surprises</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE SURPRISE 1: GIFTS UNBOXING -->
+  <section class="section surprise-section" id="gift-section">
+    <div class="section-header">
+      <div class="sub-badge">Surprise 01 🎁</div>
+      <h2 class="section-title">Special Birthday Gifts For You</h2>
+      <p class="section-subtitle">Click each gift box to untie the golden ribbon and uncover a sweet truth!</p>
+    </div>
+
+    <div class="gifts-grid">
+      <!-- Gift 1: Cutest in the world -->
+      <div class="gift-card-wrap" data-gift-id="1">
+        <div class="gift-box-3d" id="gift-1">
+          <div class="gift-lid">
+            <div class="lid-bow">
+              <div class="bow-loop left"></div>
+              <div class="bow-loop right"></div>
+              <div class="bow-center">✨</div>
+            </div>
+            <div class="lid-ribbon"></div>
+          </div>
+          <div class="gift-body">
+            <div class="box-ribbon-vertical"></div>
+            <div class="box-ribbon-horizontal"></div>
+            <div class="box-pattern"></div>
+            <div class="gift-tap-hint">Tap to Open 🎀</div>
+          </div>
+        </div>
+        <div class="gift-card-reveal glass-panel hidden" id="reveal-1">
+          <div class="reveal-ribbon">Secret Revealed 💝</div>
+          <h3 class="reveal-title">You are the cutest in the world! 🥰</h3>
+          <p class="reveal-msg">
+            No contest, no doubts! That adorable nose crinkle, your innocent pout, and the way you get excited over little things makes everyone around you fall in love. You are pure happiness, Shruti!
+          </p>
+          <div class="reveal-signature">— Krish</div>
+        </div>
+      </div>
+
+      <!-- Gift 2: Dark truth, you are loveliest -->
+      <div class="gift-card-wrap" data-gift-id="2">
+        <div class="gift-box-3d velvet-black" id="gift-2">
+          <div class="gift-lid">
+            <div class="lid-bow gold">
+              <div class="bow-loop left"></div>
+              <div class="bow-loop right"></div>
+              <div class="bow-center">👑</div>
+            </div>
+            <div class="lid-ribbon gold-ribbon"></div>
+          </div>
+          <div class="gift-body">
+            <div class="box-ribbon-vertical gold"></div>
+            <div class="box-ribbon-horizontal gold"></div>
+            <div class="gift-tap-hint">Tap to Open 🎀</div>
+          </div>
+        </div>
+        <div class="gift-card-reveal glass-panel hidden" id="reveal-2">
+          <div class="reveal-ribbon dark-gold">Dark Truth 🖤✨</div>
+          <h3 class="reveal-title">Dark truth: You are undeniably loveliest! 💖</h3>
+          <p class="reveal-msg">
+            Even when you're teasing, even when you're being moody or stubborn, you are still the most lovable, charming, and enchanting person I know. It's totally unfair how cute you look doing anything!
+          </p>
+          <div class="reveal-signature">— Krish</div>
+        </div>
+      </div>
+
+      <!-- Gift 3: Your Million-Watt Smile -->
+      <div class="gift-card-wrap" data-gift-id="3">
+        <div class="gift-box-3d velvet-gold" id="gift-3">
+          <div class="gift-lid">
+            <div class="lid-bow red">
+              <div class="bow-loop left"></div>
+              <div class="bow-loop right"></div>
+              <div class="bow-center">💫</div>
+            </div>
+            <div class="lid-ribbon red-ribbon"></div>
+          </div>
+          <div class="gift-body">
+            <div class="box-ribbon-vertical red"></div>
+            <div class="box-ribbon-horizontal red"></div>
+            <div class="gift-tap-hint">Tap to Open 🎀</div>
+          </div>
+        </div>
+        <div class="gift-card-reveal glass-panel hidden" id="reveal-3">
+          <div class="reveal-ribbon">A Lifetime Wish 🌟</div>
+          <h3 class="reveal-title">May your dreams sparkle brighter! ✨</h3>
+          <p class="reveal-msg">
+            On this birthday, I wish you endless laughter, peace, success, and all the warm hugs you deserve. May every single day treat you like the royalty you are.
+          </p>
+          <div class="reveal-signature">— Krish</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE SURPRISE 2: ENVELOPE & HEARTFELT BIRTHDAY LETTER -->
+  <section class="section letter-section" id="letter-section">
+    <div class="section-header">
+      <div class="sub-badge">Surprise 02 💌</div>
+      <h2 class="section-title">A Special Letter: "This for you Shruti"</h2>
+      <p class="section-subtitle">Click the golden wax-sealed envelope to unseal it and play celebratory crackers!</p>
+    </div>
+
+    <div class="envelope-showcase-container">
+      <!-- 3D Envelope Element -->
+      <div class="envelope-3d-wrapper" id="envelope-wrapper">
+        <div class="envelope-outer" id="envelope">
+          <div class="envelope-back"></div>
+          
+          <!-- The Letter Inside that will slide up -->
+          <div class="letter-paper" id="letter-paper">
+            <div class="letter-header">
+              <span class="letter-stamp">Royal Stamp 🌹</span>
+              <div class="letter-date" id="current-date-display">November 24</div>
+            </div>
+            <h3 class="letter-salutation">Dearest Shruti,</h3>
+            <div class="letter-body" id="typewriter-letter">
+              <p>Happy Birthday to the most breathtaking girl who walked into my life and made every ordinary day feel like poetry.</p>
+              <p>Looking at your pictures, your radiant smile in that crimson saree, your playful giggle in silly candid videos, I'm reminded over and over how lucky I am to share these memories with you.</p>
+              <p>Thank you for being you — gorgeous, sweet, wonderfully crazy, and always loveliest. May your year ahead be showered with blessings, endless happiness, and all the love in the universe.</p>
+              <div class="letter-closing">
+                <p>Always and forever,</p>
+                <div class="letter-sign">Krish ❤️</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="envelope-flap top" id="envelope-flap"></div>
+          <div class="envelope-pocket left"></div>
+          <div class="envelope-pocket right"></div>
+          <div class="envelope-pocket bottom"></div>
+
+          <!-- Wax Seal -->
+          <div class="wax-seal" id="wax-seal">
+            <div class="seal-inner">
+              <span class="seal-initial">S & K</span>
+              <span class="seal-ribbon">This for you Shruti 💌</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="envelope-instruction" id="envelope-hint">
+          <span class="pulse-icon">👆</span> Click to Open Envelope & Burst Crackers!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE SURPRISE 3: REALISTIC RED VELVET BIRTHDAY CAKE & CUTTING -->
+  <section class="section cake-section" id="cake-section">
+    <div class="section-header">
+      <div class="sub-badge">Surprise 03 🎂</div>
+      <h2 class="section-title">The Grand Red Velvet Birthday Cake</h2>
+      <p class="section-subtitle">Make a wish, blow out the candles, and cut the cake with music & confetti!</p>
+    </div>
+
+    <div class="cake-ceremony-container glass-panel">
+      <!-- Cake Status Banner -->
+      <div class="ceremony-status" id="cake-status">
+        ✨ The candles are burning bright for <strong>Shruti</strong>! Click "Cut Cake" to celebrate! ✨
+      </div>
+
+      <!-- Realistic 3D Red Velvet Cake Illustration -->
+      <div class="cake-stage">
+        <div class="cake-pedestal-stand"></div>
+
+        <div class="cake-3d" id="birthday-cake">
+          <!-- Animated Golden Knife -->
+          <div class="cutting-knife" id="cutting-knife">
+            <div class="knife-handle"></div>
+            <div class="knife-blade"></div>
+          </div>
+
+          <!-- Candles with flickering flames -->
+          <div class="cake-candles">
+            <div class="candle c1">
+              <div class="flame" id="flame-1"></div>
+              <div class="candle-stick"></div>
+            </div>
+            <div class="candle c2">
+              <div class="flame" id="flame-2"></div>
+              <div class="candle-stick"></div>
+            </div>
+            <div class="candle c3">
+              <div class="flame" id="flame-3"></div>
+              <div class="candle-stick"></div>
+            </div>
+            <div class="candle c4">
+              <div class="flame" id="flame-4"></div>
+              <div class="candle-stick"></div>
+            </div>
+            <div class="candle c5">
+              <div class="flame" id="flame-5"></div>
+              <div class="candle-stick"></div>
+            </div>
+          </div>
+
+          <!-- Cake Golden Name Plate -->
+          <div class="cake-topper-plaque">
+            <span class="topper-text">Happy Birthday Shruti ✨</span>
+          </div>
+
+          <!-- Top Tier (Red Velvet with Cream Frosting & Gold Berries) -->
+          <div class="cake-tier tier-top">
+            <div class="frosting-drip"></div>
+            <div class="gold-pearls"></div>
+            <div class="tier-surface"></div>
+          </div>
+
+          <!-- Middle Layer Cream Filling -->
+          <div class="cake-tier tier-middle">
+            <div class="velvet-sponge"></div>
+            <div class="cream-layer"></div>
+            <div class="tier-cut-slice" id="cake-slice">
+              <div class="slice-inner">🍰</div>
+            </div>
+          </div>
+
+          <!-- Bottom Tier with Gold Leaf & Decorative Swirls -->
+          <div class="cake-tier tier-bottom">
+            <div class="bottom-garland"></div>
+            <div class="gold-border-trim"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Controls -->
+      <div class="cake-actions">
+        <button id="btn-cut-cake" class="btn-royal-primary big-cta">
+          <span class="btn-icon">🗡️</span>
+          <span>Cut The Cake, Shruti! 🎂</span>
+        </button>
+        <button id="btn-blow-candles" class="btn-royal-secondary">
+          <span class="btn-icon">💨</span>
+          <span>Blow Candles</span>
+        </button>
+        <button id="btn-more-confetti" class="btn-royal-outline">
+          <span class="btn-icon">🎉</span>
+          <span>More Confetti!</span>
+        </button>
+      </div>
+
+      <!-- Celebration Greeting revealed after cut -->
+      <div class="cake-celebration-banner hidden" id="celebration-banner">
+        <h3 class="banner-title">🎉 HAPPY BIRTHDAY DEAREST SHRUTI! 🎉</h3>
+        <p class="banner-sub">May this year be as sweet, rich, and unforgettable as this red velvet cake! All the happiness in the world is yours today.</p>
+        <div class="banner-from">— With all my love, Krish ❤️</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMORY SLIDESHOW SECTION -->
+  <section class="section slideshow-section" id="slideshow-section">
+    <div class="section-header">
+      <div class="sub-badge">Moments & Memories 🌟</div>
+      <h2 class="section-title">Our Cherished Slideshow</h2>
+      <p class="section-subtitle">A cinematic reel celebrating Shruti's prettiness, smiles and togetherness.</p>
+    </div>
+
+    <div class="slideshow-card glass-panel">
+      <div class="slideshow-viewport">
+        <div class="slide-media-container" id="slide-media-container">
+          <!-- Dynamic slide items inserted by JS -->
+        </div>
+
+        <!-- Slideshow Controls -->
+        <button class="slide-nav-btn prev" id="slide-prev-btn" aria-label="Previous slide">‹</button>
+        <button class="slide-nav-btn next" id="slide-next-btn" aria-label="Next slide">›</button>
+
+        <!-- Slide Overlay Information -->
+        <div class="slide-info-bar">
+          <div class="slide-caption-title" id="slide-caption-title">Happy Memories</div>
+          <p class="slide-caption-desc" id="slide-caption-desc">Every smile has a story.</p>
+          <div class="slide-counter" id="slide-counter">1 / 11</div>
+        </div>
+
+        <!-- Slide Progress Bar -->
+        <div class="slide-progress-track">
+          <div class="slide-progress-bar" id="slide-progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="slideshow-toolbar">
+        <button id="slide-play-pause-btn" class="gold-pill-btn">⏸ Pause</button>
+        <div class="slideshow-thumbnails" id="slideshow-thumbs">
+          <!-- Thumbnails rendered by JS -->
+        </div>
+        <button id="slide-fullscreen-btn" class="gold-pill-btn ghost">⛶ Fullscreen</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO & VIDEO MEMORIES GALLERY -->
+  <section class="section memories-section" id="memories-section">
+    <div class="section-header">
+      <div class="sub-badge">Prettiness & Charm 📸</div>
+      <h2 class="section-title">Photo Memories with Glowing Gold Frames</h2>
+      <p class="section-subtitle">Click on any photo or video to view in high definition gallery with romantic captions!</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="gallery-filters">
+      <button class="filter-pill active" data-filter="all">All Memories (11)</button>
+      <button class="filter-pill" data-filter="photo">Cute Photos (7)</button>
+      <button class="filter-pill" data-filter="video">Memory Videos (4)</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid" id="gallery-grid">
+      
+      <!-- Photo 1: Krish & Shruti Hero Couple -->
+      <div class="gallery-card gold-border-frame" data-type="photo" data-index="0">
+        <div class="card-inner">
+          <div class="media-thumb-wrap">
+            <img src="assets/photo1_couple.jpg" alt="Shruti and Krish together" loading="lazy" />
+            <div class="heart-float-hover">💖</div>
+            <div class="media-type-badge">Photo</div>
+          </div>
+          <div class="card-caption">
+            <h4 class="card-title">Two Hearts, One Smile</h4>
+            <p class="card-text">Our favourite candid moment — two souls side by side. Forever my best view in this world.</p>
+            <div class="card-footer">
+              <span class="card-tag">#CutestCouple</span>
+              <span class="card-action">View Fullscreen ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo 2: Glowing Floral Filter -->
+      <div class="gallery-card gold-border-frame" data-type="photo" data-index="1">
+        <div class="card-inner">
+          <div class="media-thumb-wrap">
+            <img src="assets/photo2_glowing.jpg" alt="Shruti glowing with yellow floral filter" loading="lazy" />
+            <div class="heart-float-hover">✨</div>
+            <div class="media-type-badge">Photo</div>
+          </div>
+          <div class="card-caption">
+            <h4 class="card-title">The Celestial Glow</h4>
+            <p class="card-text">That enchanting smile and twinkling eyes that effortlessly brighten even the cloudiest day.</p>
+            <div class="card-footer">
+              <span class="card-tag">#PurePrettiness</span>
+              <span class="card-action">View Fullscreen ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo 3: 4-Grid Collage -->
+      <div class="gallery-card gold-border-frame" data-type="photo" data-index="2">
+        <div class="card-inner">
+          <div class="media-thumb-wrap">
+            <img src="assets/photo3_collage.jpg" alt="4-frame collage of Krish and Shruti" loading="lazy" />
+            <div class="heart-float-hover">🥰</div>
+            <div class="media-type-badge">Photo</div>
+          </div>
+          <div class="card-caption">
+            <h4 class="card-title">Collage of Pure Joy</h4>
+            <p class="card-text">Four snapshots of giggles, playful banter, silly faces, and 1000 reasons why I cherish you.</p>
+            <div class="card-footer">
+              <span class="card-tag">#SweetMoments</span>
+              <span class="card-action">View Fullscreen ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo 4: Cozy Heart Crown -->
+      <div class="gallery-card gold-border-frame" data-type="photo" data-index="3">
+        <div class="card-inner">
+          <div class="media-thumb-wrap">
+            <img src="assets/photo4_cute_hearts.jpg" alt="Shruti with floating heart crown" loading="lazy" />
+            <div class="heart-float-hover">👑</div>
+            <div class="media-type-badge">Photo</div>
+          </div>
+          <div class="card-caption">
+            <h4 class="card-title">Queen of Cutest Pouts</h4>
+            <p class="card-text">Innocent, cozy, and impossibly sweet. It should be illegal to look this adorable!</p>
+            <div class="card-footer">
+              <span class="card-tag">#LoveliestGirl</span>
+              <span class="card-action">View Fullscreen ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo 5: Royal Red Saree -->
+      <div class="gallery-card gold-border-frame" data-type="photo" data-index="4">
+        <div class="card-inner">
+          <div class="media-thumb-wrap">
+            <img src="assets/photo5_red_saree.jpg" alt="Shruti in royal red velvet saree" loading="lazy" />
+            <div class="heart-float-hover">🌹</div>
+            <div class="media-type-badge">Photo</div>
+          </div>
+          <div class="card-caption">
+            <h4 class="card-title">Royal Red Velvet Elegance</h4>
+            <p class="card-text">Absolute perfection in red and gold. Nobody carries Indian grace and royalty like Shruti.</p>
+            <div class="card-footer">
+              <span class="card-tag">#RedVelvetQueen</span>
+              <span class="card-action">View Fullscreen ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo 6: Traditional Pink-Gold Saree -->
+      <div class="gallery-card gold-border-frame" data-type="photo" data-index="5">
+        <div class="card-inner">
+          <div class="media-thumb-wrap">
+            <img src="assets/photo6_traditional.jpg" alt="Shruti in traditional pink-gold saree with jhumka" loading="lazy" />
+            <div class="heart-float-hover">💫</div>
+            <div class="media-type-badge">Photo</div>
+          </div>
+          <div class="card-caption">
+            <h4 class="card-title">Timeless Grace & Jhumkas</h4>
+            <p class="card-text">Traditional elegance meets timeless beauty. Heart beats faster every time I look at this picture.</p>
+            <div class="card-footer">
+              <span class="card-tag">#TraditionalBeauty</span>
+              <span class="card-action">View Fullscreen ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo 7: Car Selfie Smile -->
+      <div class="gallery-card gold-border-frame" data-type="photo" data-index="6">
+        <div class="card-inner">
+          <div class="media-thumb-wrap">
+            <img src="assets/photo7_car_smile.jpg" alt="Shruti car selfie in floral print top" loading="lazy" />
+            <div class="heart-float-hover">🚗❤️</div>
+            <div class="media-type-badge">Photo</div>
+          </div>
+          <div class="card-caption">
+            <h4 class="card-title">Sunlight & Sweet Smiles</h4>
+            <p class="card-text">Every journey is a celebration when you're there. That effortless, heartwarming smile.</p>
+            <div class="card-footer">
+              <span class="card-tag">#EverydayMagic</span>
+              <span class="card-action">View Fullscreen ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 1 -->
+      <div class="gallery-card gold-border-frame" data-type="video" data-index="7">
+        <div class="card-inner">
+          <div class="media-thumb-wrap video-wrap">
+            <video src="assets/video1.mp4" muted preload="metadata" loop></video>
+            <div class="video-play-indicator">▶</div>
+            <div class="media-type-badge video">Video</div>
+          </div>
+          <div class="card-caption">
+            <h4 class="card-title">Laughter in Motion</h4>
+            <p class="card-text">Capturing your natural charm, infectious laughter, and that radiant spark in real time.</p>
+            <div class="card-footer">
+              <span class="card-tag">#CandidJoy</span>
+              <span class="card-action">Watch Video ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="gallery-card gold-border-frame" data-type="video" data-index="8">
+        <div class="card-inner">
+          <div class="media-thumb-wrap video-wrap">
+            <video src="assets/video2.mp4" muted preload="metadata" loop></video>
+            <div class="video-play-indicator">▶</div>
+            <div class="media-type-badge video">Video</div>
+          </div>
+          <div class="card-caption">
+            <h4 class="card-title">Playful Giggles</h4>
+            <p class="card-text">A little glimpse of how much fun and cheerful warmth you bring into every conversation.</p>
+            <div class="card-footer">
+              <span class="card-tag">#CuteMoments</span>
+              <span class="card-action">Watch Video ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="gallery-card gold-border-frame" data-type="video" data-index="9">
+        <div class="card-inner">
+          <div class="media-thumb-wrap video-wrap">
+            <video src="assets/video3.mp4" muted preload="metadata" loop></video>
+            <div class="video-play-indicator">▶</div>
+            <div class="media-type-badge video">Video</div>
+          </div>
+          <div class="card-caption">
+            <h4 class="card-title">Precious Expressions</h4>
+            <p class="card-text">Every movement, every smile, frozen into an unforgettable memory that I'll treasure forever.</p>
+            <div class="card-footer">
+              <span class="card-tag">#ForeverTreasured</span>
+              <span class="card-action">Watch Video ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 4: Highlight Reel -->
+      <div class="gallery-card gold-border-frame" data-type="video" data-index="10">
+        <div class="card-inner">
+          <div class="media-thumb-wrap video-wrap">
+            <video src="assets/video4.mp4" muted preload="metadata" loop></video>
+            <div class="video-play-indicator">▶</div>
+            <div class="media-type-badge video">Video</div>
+          </div>
+          <div class="card-caption">
+            <h4 class="card-title">Her Beauty & Grace</h4>
+            <p class="card-text">A cinematic compilation celebrating everything that makes Shruti so deeply special and gorgeous.</p>
+            <div class="card-footer">
+              <span class="card-tag">#QueenShruti</span>
+              <span class="card-action">Watch Video ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FULLSCREEN LIGHTBOX / GALLERY MODAL -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close modal">✕</button>
+      
+      <div class="lightbox-content-box">
+        <div class="lightbox-media-container" id="lightbox-media-container">
+          <!-- Active image or video injected here -->
+        </div>
+
+        <div class="lightbox-details glass-panel">
+          <div class="lightbox-header">
+            <span class="lightbox-badge" id="lightbox-badge">Photo Memory</span>
+            <span class="lightbox-counter" id="lightbox-counter">1 of 11</span>
+          </div>
+          <h3 class="lightbox-title" id="lightbox-title">Two Hearts, One Smile</h3>
+          <p class="lightbox-caption" id="lightbox-caption">Captivating description...</p>
+          
+          <div class="lightbox-reactions">
+            <button class="reaction-btn" data-emoji="❤️">❤️ Love</button>
+            <button class="reaction-btn" data-emoji="👑">👑 Queen</button>
+            <button class="reaction-btn" data-emoji="✨">✨ Gorgeous</button>
+            <button class="reaction-btn" data-emoji="🥰">🥰 Cutest</button>
+            <div class="reaction-float-area" id="reaction-float-area"></div>
+          </div>
+
+          <div class="lightbox-footer-msg">
+            Dedicated with love from <strong>Krish</strong> to <strong>Shruti</strong> 🌹
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button class="lightbox-nav-btn prev" id="lightbox-prev" aria-label="Previous">‹</button>
+      <button class="lightbox-nav-btn next" id="lightbox-next" aria-label="Next">›</button>
+    </div>
+  </div>
+
+  <!-- FINAL CELEBRATION FOOTER -->
+  <footer class="app-footer">
+    <div class="footer-glow"></div>
+    <div class="footer-container">
+      <div class="footer-ornament">✦ ✦ ✦</div>
+      <h3 class="footer-title">Happy Birthday Once Again, Shruti 💖</h3>
+      <p class="footer-quote">
+        "May your life be as radiant as your smile and as warm as your heart."
+      </p>
+      
+      <!-- Special frame mention requested: From Krish in the frame -->
+      <div class="footer-frame-badge">
+        <div class="footer-badge-inner">
+          <span class="footer-heart">🌹</span>
+          <span class="footer-mention">Designed & crafted with infinite love — <strong>From Krish</strong></span>
+        </div>
+      </div>
+
+      <div class="footer-credits">
+        <span>A Red Velvet & Golden Celebration App</span> • <span>November 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
